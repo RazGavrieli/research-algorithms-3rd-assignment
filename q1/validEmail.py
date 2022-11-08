@@ -8,13 +8,15 @@ def validateEmail(email: str) -> bool:
     >>> validateEmail("this_is@valid.com")
     True
     
-    
     """
-    regex = r'\b[[a-zA-Z0-9]*[-._]?[a-zA-Z0-9]+]*@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
+    regex = r'[[a-zA-Z0-9]*[-._]?[a-zA-Z0-9]+]*@[A-Za-z0-9-]+\.[A-Z|a-z]{2,}'
     return re.fullmatch(regex, email) != None
 
 def validateEmailsInFile(file: str) -> tuple:
-    regex = r'\b.*@.*\b'
+    """
+    Gets a file name (as a string) and returns two lists: (1. valid email addresses, 2. invalid email addresses)
+    """
+    regex = r'.*@.*'
     valid = list()
     invalid = list()
     with open(file) as f:
@@ -31,15 +33,17 @@ def validateEmailsInFile(file: str) -> tuple:
 
 
 if __name__ == "__main__":
-
     import doctest
     doctest.testmod()
     print(validateEmail("not"))
     print(validateEmail("yes@yeso.com"))
     valid, invalid = validateEmailsInFile('emails.txt')
     print('valids')
-    for i in valid:
-        print(i)
+    for index, email in enumerate(valid):
+        print(index, ".", email)
+
     print('invalids')
-    for i in invalid:
-        print(i)
+    for index, email in enumerate(invalid):
+        print(index, ".", email)
+
+
