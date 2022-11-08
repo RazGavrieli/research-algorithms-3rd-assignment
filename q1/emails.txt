@@ -1,0 +1,67 @@
+Skip To Main Content
+xMatters online help
+VIDEOS
+»
+USER
+»
+MESSAGING
+»
+SUPERVISOR
+»
+INCIDENT MANAGEMENT
+»
+WORKFLOWS
+»
+FLOW DESIGNER
+»
+ADMIN
+»
+Search
+
+Valid email address format
+A valid email address consists of an email prefix and an email domain, both in acceptable formats.
+
+The prefix appears to the left of the @ symbol.
+
+The domain appears to the right of the @ symbol.
+
+For example, in the address example@mail.com, example is the email prefix, and mail.com is the email domain.
+
+Acceptable email prefix formats
+Allowed characters: letters (a-z), numbers, underscores, periods, and dashes.
+An underscore, period, or dash must be followed by one or more letter or number.
+Invalid email prefixes:	Valid email prefixes:
+abc-@mail.com	abc-d@mail.com
+abc..def@mail.com	abc.def@mail.com
+.abc@mail.com	abc@mail.com
+abc#def@mail.com	abc_def@mail.com
+Acceptable email domain formats
+Allowed characters: letters, numbers, dashes.
+The last portion of the domain must be at least two characters, for example: .com, .org, .cc
+Invalid email domains:	Valid email domains:
+abc.def@mail.c	abc.def@mail.cc
+abc.def@mail#archive.com	abc.def@mail-archive.com
+abc.def@mail	abc.def@mail.org
+abc.def@mail..com	abc.def@mail.com
+xMatters Support
+Support is the best place to get help on all xMatters products. Our team of expert support staff and users inside our community can help you get the right answer.
+
+xMatters on TwitterxMatters on FacebookxMatters on LinkedInxMatters on Youtube
+More help
+xMatters REST API
+Online Training
+Knowledge Base
+Tutorial Videos
+Other resources
+Free Workshops
+Community
+Integrations
+Corporate
+Get in touch with support
+Submit a request online
+Contact xMatters Customer Support
+All content © 2022 xMatters inc.
+
+Privacy Policy
+
+
